@@ -4,3 +4,4 @@ First value was the value i send  it and other two were random
 I didnt investigated the issue but wrote a code for anyone who is facing the same problem
 The code is very simple 
 By using array we can solve this issue
+Update the code if u have more efficient way to do
