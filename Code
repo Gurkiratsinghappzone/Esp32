@@ -1,0 +1,23 @@
+#include <BluetoothSerial.h>
+
+BluetoothSerial esp;
+int incoming[3];
+void setup() {
+  Serial.begin(9600);
+
+
+esp.begin("esp32");
+Serial.print("bluetooth is ready to be connected");
+}
+
+void loop() {
+  
+if (esp.available()){
+ for(int i=0;i<3;i++) {
+ incoming[i]=esp.read();
+  
+  }
+  Serial.println(incoming[0]);
+  //the Desired value get stored in incoming[0]
+}
+}
